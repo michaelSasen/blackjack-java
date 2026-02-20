@@ -5,7 +5,7 @@ public enum Rank {
 
     private final int value;
 
-    // Gir hver rang en verdi
+    // Grants every rank a value
     Rank(int i) {
         this.value = i;
     }
