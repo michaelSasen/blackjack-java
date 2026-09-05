@@ -2,11 +2,16 @@ package org.example.hand;
 import org.example.cards.Card;
 import org.example.cards.Rank;
 
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
 public class Hand {
     private List<Card> cards;
+
+        public Hand(List<Card> cards) {
+        this.cards = new ArrayList<>(cards);
+    }
 
     public void addCard(Card card) {
         cards.add(card);

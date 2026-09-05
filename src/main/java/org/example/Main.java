@@ -1,15 +1,13 @@
 package org.example;
 
-import org.example.cards.Card;
-import org.example.deck.Deck;
-
-import java.util.List;
+import org.example.game.DealCards;
 
 public class Main {
     static void main() {
+        DealCards dealCards = new DealCards();
+        dealCards.deal();
 
-        List<Card> deck = Deck.createDeck();
-        deck.forEach(System.out::println);
 
         }
     }
+
